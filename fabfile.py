@@ -45,9 +45,8 @@ def deploy():
     restart()
 
 def restart():
-    with cd(REMOTE_DIR):
-        sudo('service nginx restart')
-        sudo('service uwsgi restart')
+    sudo('service nginx restart')
+    sudo('service uwsgi restart')
 
 def go():
     prepare()
