@@ -11,7 +11,7 @@ def prepare():
     sudo('apt-get -y update && apt-get -y upgrade')
 
     # python dev
-    sudo('apt-get install python-pip python-dev build-essential python-virtualenv -y')
+    sudo('apt-get install python3-pip python3-dev build-essential python-virtualenv -y')
     sudo('pip install --upgrade pip')
 
     # nginx
@@ -19,7 +19,6 @@ def prepare():
 
     # uwsgi
     sudo('apt-get install uwsgi -y')
-    sudo('apt-get install python3-dev -y')
     sudo('apt-get install uwsgi-plugin-python3 -y')
 
 def deploy():
